@@ -184,7 +184,7 @@ p {
     line-height: 1.5rem;
 }
 
-/* .wrap-labor {
+ .wrap-labor {
     over flow: hidden;
     box-sizing: border-box;
     padding: 50px;
@@ -200,7 +200,7 @@ p {
 
 .col-labor p {
  padding: 5px;
-}  ESTO ES PRE FLEXBOX*/
+} /* esto va ir en flexbox */
 
 .labor-pic {
     border-radius: 50%;
@@ -212,7 +212,7 @@ p {
 #eventos {
     overflow: auto;
     padding: 25px;
-}
+} /*esto va con grids */ 
 
 .evento1, .evento2, .evento3 {
     float: left;
