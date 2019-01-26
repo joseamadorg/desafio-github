@@ -184,7 +184,7 @@ p {
     line-height: 1.5rem;
 }
 
-/* .wrap-labor {
+.wrap-labor {
     over flow: hidden;
     box-sizing: border-box;
     padding: 50px;
@@ -200,7 +200,9 @@ p {
 
 .col-labor p {
  padding: 5px;
-}  ESTO ES PRE FLEXBOX*/
+}  
+
+/* ESTO ES PRE FLEXBOX */
 
 .labor-pic {
     border-radius: 50%;
