@@ -185,7 +185,7 @@ p {
 }
 
  .wrap-labor {
-    over flow: hidden;
+    overflow: hidden;
     box-sizing: border-box;
     padding: 50px;
     padding-top: 30px;
