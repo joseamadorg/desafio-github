@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#logo{
+ max-width: 100px;
+
+}
+header {
+    background-color: whitesmoke;
+    height: 80px;
+    border-bottom-color: solid black 5px;
+    padding: 15px;
+}
+
+.menu {
+    float: right;
+    overflow: hidden;
+    padding: 30px 30px 20px 20px;
+}
+
+#hero {
+    background-image: url("https://i.musicaimg.com/wallpapers/4/4_29544_6.jpg");
+    background-position: top center;
+    margin: auto;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: -webkit-box; /* preguntar el tema del scroll lateral que me sale con block */
+}
+
+#videos {
+    background-image: url("https://i.ytimg.com/vi/fxrYMltGbx0/maxresdefault.jpg");
+    background-size: cover;
+    text-align: center;
+    height: 500px;
+    padding: 50px;
+}
+
+.vid {
+    margin: 25px;
+    text-align: left;
+}
+
+#videos h2 {
+    color: white;
+}
+
+.blanco {
+    color:white;
+}
+
+.centro {
+    text-align: center;
+}
+
+.vid {
+    margin: 25px;
+}
+
+.hero-inner {
+    position: relative;
+    top: 20%;
+    left: 10%;
+}
+
+.hero-inner p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: whitesmoke;
+    text-shadow: 0px 2px 4px rgb(0, 0, 0);
+    line-height: 1.5em;
+}
+
+#ca {
+    overflow: hidden;
+    height: 350px;
+}
+
+.ca-pic {
+    background-image: url("https://frasesdelavida.com/wp-content/uploads/2016/03/Frases-de-Canserbero-el-poeta-rapero-Con-ima%CC%81genes.jpg");
+    background-size: cover;
+    float: left;
+    width: 50%;
+    height: 350px;
+    
+}
+
+.ca-inner {
+    text-align: right;
+    /* width: 50%; */
+    padding: 50px;
+}
+
+.ca-inner h2{
+    text-align: right;
+}
+
+.hero-inner span {
+    font-weight: normal;
+    font-size: 30px;
+}
+
+button {
+    background-color: #C60021;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+
+.menu li{  
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    
+}
+a {
+    text-decoration: none;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: black ; 
+    font-weight: bold;
+
+    
+}
+
+h2, h3, h4, h5, h6 {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+
+}
+
+h2 {
+    margin-bottom: 3px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+
+}
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+.can-title {
+    font-size: 4rem !important;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900 !important;
+    margin-bottom: 10px;
+}
+
+.rojo {
+    color: #C60021 !important;
+}
+
+#subtitulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: bold; 
+    text-align: center;
+  
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
+
+/* .wrap-labor {
+    over flow: hidden;
+    box-sizing: border-box;
+    padding: 50px;
+    padding-top: 30px;
+}
+
+.col-labor{
+    float: left;
+    width: 25%;
+    text-align: center;
+    
+}
+
+.col-labor p {
+ padding: 5px;
+}  ESTO ES PRE FLEXBOX*/
+
+.labor-pic {
+    border-radius: 50%;
+    width: 60%;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.6);
+    border:10px solid #ebecee;
+}
+
+#eventos {
+    overflow: auto;
+    padding: 25px;
+}
+
+.evento1, .evento2, .evento3 {
+    float: left;
+    width: 33.33%;
+}
+
+.panelEventos {
+    clear: left;
+    overflow: auto;
+    padding: 25px;
+}
+
+footer {
+    background-image: url("https://heabbi.com/wp-content/uploads/2018/08/376877_10150949938085319_1188143527_n-1100x618.jpg"); 
+    background-position: center;
+    background-size: cover;  
+    background-repeat: no-repeat;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li{
+    text-decoration: none;
+}
+
+.grow {
+	display: inline-block;
+	transition-duration: .3s;
+	transition-property: transform;	
+}
+.grow:hover {
+    transform: scale(1.1);
+}
