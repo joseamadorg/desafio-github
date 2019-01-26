@@ -19,7 +19,6 @@ header {
     overflow: hidden;
     padding: 30px 30px 20px 20px;
 }
-
 #hero {
     background-image: url("https://i.musicaimg.com/wallpapers/4/4_29544_6.jpg");
     background-position: top center;
@@ -30,6 +29,7 @@ header {
     background-size: cover;
     position: relative;
     display: -webkit-box; /* preguntar el tema del scroll lateral que me sale con block */
+
 }
 
 #videos {
@@ -185,28 +185,28 @@ p {
 }
 
 .wrap-labor {
-    over flow: hidden;
-    box-sizing: border-box;
-    padding: 50px;
-    padding-top: 30px;
+   display: flex;
+   flex-flow: row wrap;
+   align-content: flex-start;
+   padding: 50px;
+   padding-top: 30px;
+   justify-content: space-evenly;
 }
 
 .col-labor{
-    float: left;
-    width: 25%;
+   order: 1;
+   flex-basis: 25%;
     text-align: center;
     
 }
 
 .col-labor p {
- padding: 5px;
-}  
-
-/* ESTO ES PRE FLEXBOX */
+    padding: 5px;
+}
 
 .labor-pic {
     border-radius: 50%;
-    width: 60%;
+    width: 50%;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.6);
     border:10px solid #ebecee;
 }
@@ -225,6 +225,9 @@ p {
     clear: left;
     overflow: auto;
     padding: 25px;
+}
+
+
 }
 
 footer {
@@ -249,4 +252,78 @@ footer ul li{
 }
 .grow:hover {
     transform: scale(1.1);
+}
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width: 600px) {
+
+
+    .wrap-labor {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: flex-start;
+        padding: 50px;
+        padding-top: 30px;
+        justify-content: space-evenly;
+    }
+
+    .col-labor {
+        text-align: center;
+        order: 1;
+        flex-basis: 100%;
+    }
+    #ca {
+        display: none;
+    } 
+    
+}
+
+@media only screen and (min-width: 601px) {
+
+
+    .wrap-labor {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: flex-start;
+        padding: 50px;
+        padding-top: 30px;
+        justify-content: space-evenly;
+    }
+
+    .col-labor {
+        text-align: center;
+        order: 1;
+        flex-basis: 50%;
+    }
+
+    #ca-inner {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+
+
+    .wrap-labor {
+        display: flex;
+        flex-flow: row nowrap;
+        align-content: flex-start;
+        padding: 50px;
+        padding-top: 30px;
+        justify-content: space-evenly;
+    }
+
+    .col-labor {
+        text-align: center;
+        order: 1;
+        flex-basis: 100%;
+    } 
+    .ca-inner {
+        text-align: right;
+        padding: 0px;
+    }
 }
