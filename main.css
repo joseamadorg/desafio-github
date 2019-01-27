@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 #logo{
  max-width: 100px;
 
@@ -10,7 +14,6 @@
 header {
     background-color: whitesmoke;
     height: 80px;
-    border-bottom-color: solid black 5px;
     padding: 15px;
 }
 
@@ -32,7 +35,7 @@ header {
 
 }
 
-#videos {
+#luz {
     background-image: url("https://i.ytimg.com/vi/fxrYMltGbx0/maxresdefault.jpg");
     background-size: cover;
     text-align: center;
@@ -40,13 +43,28 @@ header {
     padding: 50px;
 }
 
+fieldset {
+    border: none;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
+input, select {
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+label {
+    color: white;
+}
+
 .vid {
     margin: 25px;
     text-align: left;
-}
-
-#videos h2 {
-    color: white;
 }
 
 .blanco {
@@ -91,7 +109,6 @@ header {
 
 .ca-inner {
     text-align: right;
-    /* width: 50%; */
     padding: 50px;
 }
 
@@ -115,6 +132,13 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 16px;
+}
+
+input.boton {
+    color: white;
+    background-color: transparent;
+    border: none;
+    padding: 1px;
 }
 
 .menu li{  
@@ -228,13 +252,29 @@ p {
 }
 
 
-}
+.grid-item {
+    position: relative;
+    top: 50%;
+    text-align: center;
+    transform: translate(0, -50%);
+    padding: 1rem;
+  }
+  
+  .container-grid {
+    display: grid;
+  }
+  
+  .left-half {
+    grid-column: 1;
+  }
+  
+  .right-half {
+    grid-column: 2;
+  }
+
 
 footer {
-    background-image: url("https://heabbi.com/wp-content/uploads/2018/08/376877_10150949938085319_1188143527_n-1100x618.jpg"); 
-    background-position: center;
-    background-size: cover;  
-    background-repeat: no-repeat;
+  
 }
 
 footer ul {
