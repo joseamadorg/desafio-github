@@ -19,8 +19,7 @@
             <ul> 
                 <li><a  class="grow" href="#labor">Nuestra labor</a></li> 
                 <li><a  class="grow" href="#eventos">Próximos Eventos</a></li>
-                <li><a  class="grow" href="#video">Videos y Musica</a></li>
-                <li><a  class="grow" href="#colabora">Unetenos</a></li>  
+                <li><a  class="grow" href="#luz">Unetenos</a></li>  
             </ul>
         </nav>
         <img id="logo" src="https://canserbero.net/wp-content/uploads/2018/11/Logo-Canserbero.net-01-300x255.png" alt="Logo Fundacion" width="150">
@@ -40,7 +39,7 @@
                     </div>
                 </div>
             </section>
-            <section>
+            <section><!--EN ESTA SECCION USO FLEXBOX -->
                     <div id="labor">
                         <h2>NUESTRA <span class="rojo">LABOR</span></h2>
                         <div id="subtitulo">"somos los martillos y las ruedas"</div>
@@ -121,23 +120,26 @@
                         </div>    
                     </div>
             </section>    
-            <section>
-                <div id="videos">
-                        <h2>LUZ PARA CAN</h2> 
+             <section><!--EN ESTA SECCION USO GRID -->
+                <div id="luz">
+                        <h2 class="blanco">LUZ PARA CAN</h2> 
                         <span id="subtitulo" class="blanco">"Todas mis canciones se llaman Vida"</span>
-                        <div class="vid"><iframe width="560" height="315" src="https://www.youtube.com/embed/E-JltNatQ9Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-                </div>
-                <div id="colabora">
-                        <form action="#">
+
+                            <div class="container-grid">
+                                <div class="left-half">
+                                    <div class="grid-item">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/E-JltNatQ9Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    </div>
+                                  </div>
+                                  <div class="right-half">
+                                    <div class="grid-item">
+                                      <form action="#">
                                 <form action="#" method="#">
                                         <fieldset>
-                                            <legend>Únete a la causa</legend>
-                                                    <input type="radio" name="sexo" value="masculino">Hombre
-                                                    <input type="radio" name="sexo" value="femenino"> Mujer
-                                              <br>
+                                            <!-- <legend class="subtitulo blanco">Únetenos</legend> -->
                                               <br>
                                                   <label for="Nombre">Nombre:</label>	
-                                                    <input type="text" name="info-personal" id="Nombre" placeholder="Nombre"/>
+                                                  <input type="text" name="info-personal" id="Nombre" placeholder="Nombre"/>
                                             <br>
                                               <br>
                                                   <label for="Apellido">Apellido:</label>
@@ -154,11 +156,12 @@
                                             <br>
                                               <br>
                             
-                                                        <input type="submit" value="Enviar">
+                                                        <button><input type="submit" class="boton grow" value="¡Quiero unirme!"></button>
                                         </fieldset>
-                                    </form>
-                        </form>
-                </div>
+                                </form>
+                            </div>
+                                  </div>
+                            </div>
             </section>
         </main>
         
