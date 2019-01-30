@@ -3,40 +3,57 @@
     margin: 0;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-#logo{
- max-width: 100px;
-
+a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: black;
 }
+
+#logo {
+ max-width: 100px;
+}
+
 header {
-    background-color: whitesmoke;
     height: 80px;
     padding: 15px;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 .menu {
     float: right;
     overflow: hidden;
     padding: 30px 30px 20px 20px;
+    background-color: transparent;
 }
 #hero {
-    background-image: url("https://i.musicaimg.com/wallpapers/4/4_29544_6.jpg");
-    background-position: top center;
+    background-image: url("https://popnable.com/images/singers/temp/canserbero_venezuela_top_50_238.jpg");
+    background-attachment: fixed;
     margin: auto;
-    height: 500px;
-    background-position: center;
+    height: 650px;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    display: -webkit-box; /* preguntar el tema del scroll lateral que me sale con block */
-
+}
+ 
+#labor {
+    padding-top: 55px;
 }
 
 #luz {
     background-image: url("https://i.ytimg.com/vi/fxrYMltGbx0/maxresdefault.jpg");
+    background-attachment: fixed;
     background-size: cover;
     text-align: center;
     height: 500px;
@@ -81,16 +98,17 @@ label {
 
 .hero-inner {
     position: relative;
-    top: 20%;
-    left: 10%;
+    padding-top: 15%;
+    padding-left: 10%;
+    width: 90%;
 }
 
 .hero-inner p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: whitesmoke;
-    text-shadow: 0px 2px 4px rgb(0, 0, 0);
+    font-size: 18px;
+    color: white;
     line-height: 1.5em;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 #ca {
@@ -119,14 +137,13 @@ label {
 }
 
 
-
 .ca-inner h2{
     text-align: right;
 }
 
 .hero-inner span {
     font-weight: normal;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 button {
@@ -142,28 +159,11 @@ button {
     border-radius: 16px;
 }
 
-input.boton {
-    color: white;
-    background-color: transparent;
-    border: none;
-    padding: 1px;
-}
-
 .menu li{  
     list-style: none;
     display: inline-block;
     text-decoration: none;
-    
-}
-a {
-    text-decoration: none;
-    padding: 10px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: black ; 
-    font-weight: bold;
-
-    
+    margin: 0px 3px 0 3px;
 }
 
 h2, h3, h4, h5, h6 {
@@ -184,7 +184,7 @@ h2 {
 h1 {
     font-size: 3rem;
     text-transform: uppercase;
-    color: whitesmoke;
+    color: black;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
 }
@@ -192,22 +192,23 @@ h1 {
 .can-title {
     font-size: 4rem !important;
     text-transform: uppercase;
-    color: whitesmoke;
+    color: white;
     font-family: 'Montserrat', sans-serif;
     font-weight: 900 !important;
     margin-bottom: 10px;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
 }
 
 .rojo {
     color: #C60021 !important;
 }
 
-#subtitulo {
+.subtitulo {
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: bold; 
+    font-size: 14px; 
     text-align: center;
-  
 }
 
 p {
@@ -245,7 +246,7 @@ p {
 
 #eventos {
     overflow: auto;
-    padding: 25px;
+    padding: 70px 25px 25px 25px;
 }
 
 .evento1, .evento2, .evento3 {
@@ -266,31 +267,27 @@ p {
     text-align: center;
     transform: translate(0, -50%);
     padding: 1rem;
-  }
+}
   
   .container-grid {
     display: grid;
-  }
+}
   
   .left-half {
     grid-column: 1;
-  }
+}
   
   .right-half {
     grid-column: 2;
-  }
+}
 
 
 footer {
-  
-}
-
-footer ul {
-    list-style: none;
-}
-
-footer ul li{
-    text-decoration: none;
+  text-align: center;
+  background-color: rgb(39, 38, 38);
+  padding: 20px;
+  height: 20px;
+  color: white;
 }
 
 .grow {
@@ -303,16 +300,13 @@ footer ul li{
 }
 
 
-
-
 /*MEDIA QUERIES*/
 
-@media only screen and (max-width: 600px) {
-
+@media screen and (min-width: 780px) and (max-width:1024px) {
 
     .wrap-labor {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
         align-content: flex-start;
         padding: 50px;
         padding-top: 30px;
@@ -323,15 +317,14 @@ footer ul li{
         text-align: center;
         order: 1;
         flex-basis: 100%;
-    }
-    #ca {
-        display: none;
     } 
-    
+    .ca-inner {
+        text-align: right;
+        padding: 25px;
+    }
 }
 
-@media only screen and (min-width: 601px) {
-
+@media screen and (min-width: 480px) and (max-width:780px) {
 
     .wrap-labor {
         display: flex;
@@ -353,12 +346,12 @@ footer ul li{
     }
 }
 
-@media only screen and (min-width: 900px) {
 
+@media screen and (max-width:480px) {
 
     .wrap-labor {
         display: flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         align-content: flex-start;
         padding: 50px;
         padding-top: 30px;
@@ -369,9 +362,9 @@ footer ul li{
         text-align: center;
         order: 1;
         flex-basis: 100%;
-    } 
-    .ca-inner {
-        text-align: right;
-        padding: 25px;
     }
+    #ca {
+        display: none;
+    } 
+    
 }
