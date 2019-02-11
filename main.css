@@ -7,6 +7,11 @@ html {
     scroll-behavior: smooth;
 }
 
+.container {
+    margin: auto;
+    max-width: 1980px;
+}
+
 a {
     text-decoration: none;
     padding: 8px 15px;
@@ -56,7 +61,6 @@ header {
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
-    height: 500px;
     padding: 50px;
 }
 
@@ -66,6 +70,7 @@ fieldset {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     color: white;
+    width: 60%;
 }
 
 input, select {
@@ -240,7 +245,6 @@ p {
 .labor-pic {
     border-radius: 50%;
     width: 50%;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.6);
     border:10px solid #ebecee;
 }
 
@@ -249,38 +253,103 @@ p {
     padding: 70px 25px 25px 25px;
 }
 
-.evento1, .evento2, .evento3 {
-    float: left;
-    width: 33.33%;
+.call-outs-container {
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
 }
-
-.panelEventos {
-    clear: left;
-    overflow: auto;
-    padding: 25px;
+  
+  .call-out {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    flex-basis: 30%;
+    flex: 1;
 }
-
 
 .grid-item {
     position: relative;
-    top: 50%;
     text-align: center;
-    transform: translate(0, -50%);
     padding: 1rem;
 }
   
   .container-grid {
     display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 30px
 }
   
   .left-half {
-    grid-column: 1;
+    /* grid-column: 1; */
 }
   
   .right-half {
-    grid-column: 2;
+    /* grid-column: 2; */
 }
 
+.control {
+    font-family: 'Montserrat' sans-serif;
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 5px;
+    padding-top: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.control input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+}
+.control_indicator {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background: #e6e6e6;
+    border: 0px solid #000000;
+}
+.control-radio .control_indicator {
+    border-radius: 50%;
+}
+
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+    background: #cccccc;
+}
+
+.control input:checked ~ .control_indicator {
+    background: #C60021;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+    background: #0e6647d;
+}
+.control input:disabled ~ .control_indicator {
+    background: #e6e6e6;
+    opacity: 0.6;
+    pointer-events: none;
+}
+.control_indicator:after {
+    box-sizing: unset;
+    content: '';
+    position: absolute;
+    display: none;
+}
+.control input:checked ~ .control_indicator:after {
+    display: block;
+}
+.control-radio .control_indicator:after {
+    left: 7px;
+    top: 7px;
+    height: 6px;
+    width: 6px;
+    border-radius: 50%;
+    background: #ffffff;
+}
 
 footer {
   text-align: center;
@@ -298,6 +367,129 @@ footer {
 .grow:hover {
     transform: scale(1.1);
 }
+
+
+/* -------  DE ACA */
+
+.evento p{
+    font-family: 'Montserrat', sans-serif;
+    margin:0px;
+    color: white;
+    font-size:15px;
+    line-height:20px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top:3%;
+    padding-bottom:8%;
+    border-radius:20px;
+    cursor:pointer;
+    transition: ease 1s;
+    -webkit-transition: ease 1s;
+  }
+  
+  .evento h3{
+    font-family: 'Montserrat', sans-serif;
+    margin:0px;
+    color: white;
+    font-weight: 400;
+    font-size:20px;
+    line-height:90%;
+    padding-left: 8%;
+    padding-top:8%;
+    padding-bottom:3%;
+    border-radius:20px;
+    cursor:pointer;
+    transition: ease 1s;
+    -webkit-transition: ease 1s;
+  }
+  
+  .eventos-grid {
+    width:80%;
+    position:relative;
+    margin-left:auto;
+    margin-right:auto;
+    padding-bottom:50px;
+    padding-top: 50px;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+  
+  .evento{
+    width:22%;
+    position:relative;
+    background-color: #C60021;
+    margin:1.13%;
+    border-radius:5px;
+    transition: 1s;
+    -webkit-transition:0.5s;
+    cursor:pointer;
+    flex: 1 1 auto;
+    text-align: center;
+  }
+  
+  .evento:hover{
+    transform: scale(1.05);
+    box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+  }
+
+  .linea{
+    height:2px;
+    width:84%;
+    margin:auto;
+    background-color: white;
+  }
+
+  .evento_img{
+    width:100%;
+    height:150px;
+    position:relative;
+    border-radius: 5px 5px 0px 0px;
+    background-size: cover;
+    background-position:center center; 
+    background-color: #20e6b3;
+    transition:1s;
+    -webkit-transition:1s;
+  }
+
+  .evento-button {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 0px 15px 0px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+.evento1{
+    background-image: url("https://innovationorigins.com/wp-content/uploads/2018/06/Vicky-Bergmans-actie-_-foto-Bram-Berkien.png");
+ }
+ .evento2{
+    background-image: url("http://www.bellariaigeamarina.org/storage-image/EVENTI-2016/BEACH-BASKET/Beach-basket-3.jpg");
+}
+.evento3{
+    background-image: url("http://playtowin.com.ar/basket/play-to-win-caballito-basquet-3x3.jpg");
+ }
+ .evento4{
+    background-image: url("https://www.cremonaoggi.it/wp-content/uploads/2018/06/barcella-ev-770x370.jpg");
+ }
+ .evento5{
+    background-image: url("https://www.elespectador.com/sites/default/files/06bogota_nota1%2Cph01_1538772033.jpg");
+ }
+ .evento6{
+    background-image: url("https://s3-eu-west-1.amazonaws.com/bwinnewsprod/es/uploads/2019/02/Super-BowLIII-809x410Category-Carousel-Image-and-Feature-image-on-mobile-809x410-7.jpg");
+ }
+
+
+
+
+
+/* HASTA ACA */
 
 
 /*MEDIA QUERIES*/
@@ -322,6 +514,15 @@ footer {
         text-align: right;
         padding: 25px;
     }
+    .evento{
+        width:30%;
+        margin:1.6%;
+    }
+    iframe {
+        width: auto;
+        height: auto;
+    }
+
 }
 
 @media screen and (min-width: 480px) and (max-width:780px) {
@@ -344,6 +545,66 @@ footer {
     #ca-inner {
         display: none;
     }
+    .call-outs-container {
+        display: block;
+        margin-top: 25px;
+    }
+    
+    #logo {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #eventos {
+        padding: 0px;
+    }
+    .evento{
+        width:45%;
+        margin:2.5%;
+    }
+
+    .ca-inner {
+        padding-top: 0px;
+    }
+
+    .ca-inner p {
+        font-size: 16px;
+        line-height: 1.8em;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    fieldset {
+        font-size: 14px;
+        width: 55%;
+    }
+
+    .container-grid {
+        grid-template-columns: 40% 60%;
+        grid-gap: 5px;
+    }
+
+    #hero {
+        background-size: contain;
+    }
+    .hero-inner p {
+        font-size: 12px;
+        line-height: 1.6em;
+        text-shadow: 2px 1px 0px rgba(0,0,0,0.3);
+    }
+    .hero-inner {
+        padding-top: 15%;
+        padding-left: 5%;
+    }
+
+    
+
 }
 
 
@@ -366,5 +627,87 @@ footer {
     #ca {
         display: none;
     } 
+
+    #logo {
+        display: none;
+    }
+
+    nav {
+        display: none;
+    }
+    #hero {
+        margin: auto;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: inherit;
+        height: auto;
+    }
+    .hero-inner {
+        position: relative;
+        padding-top: 60%;
+        padding-left: 10%;
+        width: 85%;
+
+    }
+    h1 {
+        font-size: 1rem;
+    }
+    h2 {
+         margin-top: 0px;
+
+    }
+    .can-title {
+        font-size: 1.8rem !important;
+        text-transform: uppercase;
+        color: #C60021 !important;
+        text-shadow: none;
+    }
+    .hero-inner p {
+        color: black;
+        line-height: 1.5em;
+        text-shadow: none;
+        margin-bottom: 10px;
+    }
     
+    .hero-inner span {
+        font-size: 18px;
+    }
+
+    .hero-inner button {
+       display: none;
+    }
+
+    #labor {
+        padding-top: 0px;
+    }
+    .call-outs-container {
+        display: block;
+        margin-top: 25px;
+    }
+    #eventos {
+        padding: 0px;
+    }
+    .evento{
+        width:98%;
+        margin:2%;
+    }
+    fieldset {
+        border: none;
+        text-align: left;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        line-height: 20px;
+        width: 70%;
+    }
+
+    .container-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 25%;
+        grid-gap: 30px;
+    }
+    iframe {
+        width: 100% !important;
+        height: auto;
+    }
 }
