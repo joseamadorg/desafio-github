@@ -4,30 +4,42 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>FUNDACION TIRONE GONZALEZ. EL CANSERBERO</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
 <div class="container">
 <!-- 040219:1127-->
-<header>
-        <nav class="menu">
-            <ul> 
-                <li><a  class="grow" href="#labor">Nuestra labor</a></li> 
-                <li><a  class="grow" href="#eventos">Próximos Eventos</a></li>
-                <li><a  class="grow" href="#luz">Únetenos</a></li>  
-            </ul>
-        </nav>
-        <img id="logo" src="https://canserbero.net/wp-content/uploads/2018/11/Logo-Canserbero.net-01-300x255.png" alt="Logo Fundacion">
-</header>
+<div class="wrapper">
+    <header>
+          <nav>
+
+                <div class="menu-icon">
+                      <i class="fa fa-bars fa-2x"></i>
+                </div>
+
+                <div class="logo"><img src="./img/LOGO-CAN.png" alt="LOGO"></div>
+
+                <div class="menu">
+                      <ul>
+                            <li><a class="inOut" href="#labor">Nuestra Labor</a></li>
+                            <li><a class="inOut" href="#eventos">Eventos</a></li>
+                            <li><a class="inOut" href="#luz">Únetenos</a></li>
+                      </ul>
+                </div>
+          </nav>
+    </header>
+</div>
         <main>
             <section>
                 <div id="hero">
                     <div class= "hero-inner"> 
-                        <h1><span>Fundación Tirone Gonzalez</span></h1>
+                        <h1><span>Fundación Tirone González</span></h1>
                         <span class="can-title">El Canserbero</span>
-                        <p>Mantenemos vivo el mensaje de Tirone Gonzalez, el Canserbero.
+                        <p>Mantenemos vivo el mensaje de Tirone González, el Canserbero.
                         <br>A través del arte creamos espacios de apoyo escolar, 
                         <br>pedagógico y deportivo, en zonas necesitadas y de bajos recursos.
                         <br>No estamos asociados a partidos o tendencias políticas.
@@ -35,11 +47,11 @@
                         <button class="grow">ÚNETENOS</button>
                     </div>
                 </div>
-            </section> <!--HERO END -->
-            <section id="labor"><!--SECCION LABOR - FLEXBOX -->
+            </section> <!-- /HERO -->
+            <section id="labor"><!--LABOR - FLEXBOX -->
                     <div>
                         <h2>NUESTRA <span class="rojo">LABOR</span></h2>
-                        <div class="subtitulo">"somos los martillos y las ruedas"</div>
+                        <div class="subtitulo">"Somos los martillos y las ruedas"</div>
                         <div class="wrap-labor">
                             <div class="col-labor">
                                 <img class="labor-pic" src="http://www.academialider.com/cache~e-8-4-e-0-e84e0d107048fc3baca6132d1194999610b913fe/apoyo-escolar-penaranda.jpg" alt="imagen">
@@ -72,8 +84,8 @@
                             </div>
                         </div>
                     </div>
-            </section> <!--LABOR END-->
-            <section id="ca">
+            </section> <!-- /LABOR -->
+            <section id="ca"> 
                 <div class="ca-pic"></div>
                 <div class="ca-inner">
                         <h2>ALL WE NEED IS <span class="rojo">LOVE</span></h2>
@@ -83,15 +95,14 @@
                             Porque solos no podemos hacer médanos,<br>
                             Porque solo yo no puedo hacer océanos"
                         </p>
-                        <button class="grow">UNETENOS</button>
+                        <button class="grow">ÚNETENOS</button>
                 </div>
-            </section> <!--CA END-->
-            <section>  <!--SECCION EVENTOS - FLEXBOX-->
+            </section> <!--/CA-->
+            <section>  <!--EVENTOS - FLEXBOX-->
                     <div id="eventos">
                         <h2>PRÓXIMOS EVENTOS</h2>
                         <div class="subtitulo">"El verdadero respeto lo brindan los que están contigo"</div>
                         <div class="eventos-grid">
-  
                                 <div class="evento">
                                   <div class="evento_img evento1"></div>
                                   <h3>EXPO B-DANCE 2019</h3>
@@ -147,8 +158,8 @@
                                 </div>
                              </div>
                     </div>
-            </section>  <!--EVENTOS END-->
-            <section><!-- SECCION LUZ - GRID -->
+            </section>  <!-- /EVENTOS -->
+            <section><!-- LUZ - GRID -->
                 <div id="luz">
                     <h2 class="blanco">LUZ PARA CAN</h2> 
                     <span class="subtitulo blanco">"Todas mis canciones se llaman Vida"</span>
@@ -192,12 +203,34 @@
                             </div>
                         </div>
                 </div>
-            </section> <!--END LUZ-->
+            </section> <!-- /LUZ -->
         </main>
 <footer>
      <p>Diseño José Amador</p>
 </footer>
-</div><!-- container-end-->
+</div><!-- /CONTAINER-->
+<script type="text/javascript">
+
+    //Boton movil menu
+
+    $(document).ready(function() {
+          $(".menu-icon").on("click", function() {
+                $("nav ul").toggleClass("showing");
+          });
+    });
+
+    // Scrolling
+
+    $(window).on("scroll", function() {
+          if($(window).scrollTop()) {
+                $('nav').addClass('black');
+          }
+
+          else {
+                $('nav').removeClass('black');
+          }
+    })
+    </script>
 </body>
 </html>
 
