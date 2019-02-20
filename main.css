@@ -2,182 +2,26 @@
     padding: 0;
     margin: 0;
 }
-
 html {
     scroll-behavior: smooth;
 }
-
 .container {
     margin: auto;
     max-width: 1980px;
 }
-
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.5rem;
+}
 a {
-    text-decoration: none;
-    padding: 8px 15px;
-    border-radius: 16px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: white;
-    background-color: black;
+    font-family: 'Montserrat', sans-serif; 
 }
-
-#logo {
- max-width: 100px;
-}
-
-header {
-    height: 80px;
-    padding: 15px;
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-}
-
-.menu {
-    float: right;
-    overflow: hidden;
-    padding: 30px 30px 20px 20px;
-    background-color: transparent;
-}
-#hero {
-    background-image: url("https://popnable.com/images/singers/temp/canserbero_venezuela_top_50_238.jpg");
-    background-attachment: fixed;
-    margin: auto;
-    height: 650px;
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
- 
-#labor {
-    padding-top: 55px;
-}
-
-#luz {
-    background-image: url("https://i.ytimg.com/vi/fxrYMltGbx0/maxresdefault.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    text-align: center;
-    padding: 50px;
-}
-
-fieldset {
-    border: none;
-    text-align: left;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    color: white;
-    width: 60%;
-}
-
-input, select {
-    border: none;
-    padding: 15px;
-    border-radius: 5px;
-    width: 100%;
-}
-
-label {
-    color: white;
-}
-
-.vid {
-    margin: 25px;
-    text-align: left;
-}
-
-.blanco {
-    color:white;
-}
-
-.centro {
-    text-align: center;
-}
-
-.vid {
-    margin: 25px;
-}
-
-.hero-inner {
-    position: relative;
-    padding-top: 15%;
-    padding-left: 10%;
-    width: 90%;
-}
-
-.hero-inner p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
-    color: white;
-    line-height: 1.5em;
-    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
-}
-
-#ca {
-    overflow: hidden;
-    height: 350px;
-}
-
-.ca-pic {
-    background-image: url("https://frasesdelavida.com/wp-content/uploads/2016/03/Frases-de-Canserbero-el-poeta-rapero-Con-ima%CC%81genes.jpg");
-    background-size: cover;
-    float: left;
-    width: 50%;
-    height: 350px;
-    
-}
-
-.ca-inner {
-    text-align: right;
-    padding: 50px;
-}
-
-
-.ca-inner p {
- font-size: 18px;
- line-height: 1.5em;
-}
-
-
-.ca-inner h2{
-    text-align: right;
-}
-
-.hero-inner span {
-    font-weight: normal;
-    font-size: 26px;
-}
-
-button {
-    background-color: #C60021;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 16px;
-}
-
-.menu li{  
-    list-style: none;
-    display: inline-block;
-    text-decoration: none;
-    margin: 0px 3px 0 3px;
-}
-
 h2, h3, h4, h5, h6 {
     color: black;
     font-family: 'Montserrat', sans-serif;
     margin: 10px;
-
 }
-
 h2 {
     margin-bottom: 3px;
     margin-top: 50px;
@@ -193,100 +37,49 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
 }
-
-.can-title {
-    font-size: 4rem !important;
-    text-transform: uppercase;
+button {
+    background-color: #C60021;
+    border: none;
     color: white;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900 !important;
-    margin-bottom: 10px;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
 }
-
 .rojo {
     color: #C60021 !important;
 }
-
 .subtitulo {
     font-family: 'Montserrat', sans-serif;
     font-size: 14px; 
     text-align: center;
 }
-
-p {
+fieldset {
+    border: none;
+    text-align: left;
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    line-height: 1.5rem;
+    font-size: 18px;
+    color: white;
+    width: 60%;
 }
-
-.wrap-labor {
-   display: flex;
-   flex-flow: row wrap;
-   align-content: flex-start;
-   padding: 50px;
-   padding-top: 30px;
-   justify-content: space-evenly;
+input, select {
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    width: 100%;
 }
-
-.col-labor{
-   order: 1;
-   flex-basis: 25%;
+label {
+    color: white;
+}
+.blanco {
+    color:white;
+}
+.centro {
     text-align: center;
-    
 }
-
-.col-labor p {
-    padding: 5px;
-}
-
-.labor-pic {
-    border-radius: 50%;
-    width: 50%;
-    border:10px solid #ebecee;
-}
-
-#eventos {
-    overflow: auto;
-    padding: 70px 25px 25px 25px;
-}
-
-.call-outs-container {
-    max-width: 1400px;
-    margin: 40px auto 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-  
-  .call-out {
-    padding: 20px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
-    flex-basis: 30%;
-    flex: 1;
-}
-
-.grid-item {
-    position: relative;
-    text-align: center;
-    padding: 1rem;
-}
-  
-  .container-grid {
-    display: grid;
-    grid-template-columns: 60% 40%;
-}
-  
-  .left-half {
-    /* grid-column: 1; */
-}
-  
-  .right-half {
-    /* grid-column: 2; */
-}
-
 .control {
     font-family: 'Montserrat' sans-serif;
     display: block;
@@ -298,9 +91,9 @@ p {
     font-size: 16px;
 }
 .control input {
-        position: absolute;
-        z-index: -1;
-        opacity: 0;
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
 }
 .control_indicator {
     position: absolute;
@@ -319,7 +112,6 @@ p {
 .control input:focus ~ .control_indicator {
     background: #cccccc;
 }
-
 .control input:checked ~ .control_indicator {
     background: #C60021;
 }
@@ -349,27 +141,207 @@ p {
     border-radius: 50%;
     background: #ffffff;
 }
-
-footer {
-  text-align: center;
-  background-color: rgb(39, 38, 38);
-  padding: 20px;
-  height: 20px;
-  color: white;
-}
-
 .grow {
-	display: inline-block;
-	transition-duration: .3s;
-	transition-property: transform;	
+    display: inline-block;
+    transition-duration: .3s;
+    transition-property: transform;	
 }
 .grow:hover {
     transform: scale(1.1);
 }
-
-
-/* -------  DE ACA */
-
+footer {
+    text-align: center;
+    background-color: rgb(39, 38, 38);
+    padding: 20px;
+    height: 20px;
+    color: white;
+}
+.can-title {
+    font-size: 4rem !important;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900 !important;
+    margin-bottom: 10px;
+    text-shadow:0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
+}
+/*---NAV---*/
+.logo img {
+    position: fixed;
+    float: left;
+    margin: 3px 20px;
+    max-width: 85px;
+}
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding-right: 40px;
+    transition: 0.3s;
+}
+.black {
+    margin-top: 0px;
+}
+nav.black ul {
+    background: rgba(0, 0, 0, 0.36);
+}
+nav ul li {
+    display: inline-block;
+    padding: 16px 40px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif; 
+}
+.caja-nav .custom-underline::after {
+    top: 65%;
+    height: 2px !important;
+    width: 40%;
+    left: 30%;
+    background-color: rgba(255, 255, 255, 0.6);
+        transition: 0.4s ease-out all .6s;
+}
+.caja-nav:hover .custom-underline::after {
+    width: 90%;
+    left: 5%;
+        transition: 0.5s ease all;
+}
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+.inOut {
+    position: relative;
+    top: calc(80% - 15px);
+    white-space: nowrap;
+    cursor: pointer;
+}
+.inOut::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    background-color: #C60021;
+    transition: all 0.5s;
+}
+.inOut:hover::after {
+    transform: scale(1);
+}  
+ /*----/NAV---*/
+#hero {
+    background-image: url("https://popnable.com/images/singers/temp/canserbero_venezuela_top_50_238.jpg");
+    background-attachment: fixed;
+    margin: auto;
+    height: 650px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-inner {
+    position: relative;
+    padding-top: 15%;
+    padding-left: 10%;
+    width: 90%;
+}
+.hero-inner p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+    line-height: 1.5em;
+    text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+.hero-inner span {
+    font-weight: normal;
+    font-size: 26px;
+}
+/*-- /HERO--*/
+#labor {
+    padding-top: 55px;
+}
+.wrap-labor {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    padding: 50px;
+    padding-top: 30px;
+    justify-content: space-evenly;
+ }
+ .col-labor{
+     order: 1;
+     flex-basis: 25%;
+     text-align: center;    
+ }
+ .col-labor p {
+     padding: 5px;
+ }
+ .labor-pic {
+     border-radius: 50%;
+     width: 50%;
+     border:10px solid #ebecee;
+}
+/*-- /LABOR --*/ 
+#ca {
+    overflow: hidden;
+    height: 350px;
+}
+.ca-pic {
+    background-image: url("https://frasesdelavida.com/wp-content/uploads/2016/03/Frases-de-Canserbero-el-poeta-rapero-Con-ima%CC%81genes.jpg");
+    background-size: cover;
+    float: left;
+    width: 50%;
+    height: 350px;    
+}
+.ca-inner {
+    text-align: right;
+    padding: 50px;
+}
+.ca-inner p {
+    font-size: 18px;
+    line-height: 1.5em;
+}
+.ca-inner h2{
+    text-align: right;
+}
+/*-- /CALL TO ACTION -'CA'---*/
+#eventos {
+    overflow: auto;
+    padding: 70px 25px 25px 25px;
+}
+.grid-item {
+    position: relative;
+    text-align: center;
+    padding: 1rem;
+}
+.container-grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 30px
+}
+/* -------  MODULOS DE EVENTOS --- */
 .evento p{
     font-family: 'Montserrat', sans-serif;
     margin:0px;
@@ -384,9 +356,8 @@ footer {
     cursor:pointer;
     transition: ease 1s;
     -webkit-transition: ease 1s;
-  }
-  
-  .evento h3{
+}
+.evento h3{
     font-family: 'Montserrat', sans-serif;
     margin:0px;
     color: white;
@@ -400,9 +371,8 @@ footer {
     cursor:pointer;
     transition: ease 1s;
     -webkit-transition: ease 1s;
-  }
-  
-  .eventos-grid {
+}
+.eventos-grid {
     width:80%;
     position:relative;
     margin-left:auto;
@@ -412,10 +382,8 @@ footer {
     display:flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
-  }
-  
-  .evento{
+}
+.evento{
     width:22%;
     position:relative;
     background-color: #C60021;
@@ -426,21 +394,18 @@ footer {
     cursor:pointer;
     flex: 1 1 auto;
     text-align: center;
-  }
-  
-  .evento:hover{
+}
+.evento:hover{
     transform: scale(1.05);
     box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
-  }
-
-  .linea{
+}
+.linea{
     height:2px;
     width:84%;
     margin:auto;
     background-color: white;
-  }
-
-  .evento_img{
+}
+.evento_img{
     width:100%;
     height:150px;
     position:relative;
@@ -450,9 +415,8 @@ footer {
     background-color: #20e6b3;
     transition:1s;
     -webkit-transition:1s;
-  }
-
-  .evento-button {
+}
+.evento-button {
     background-color: black;
     border: none;
     color: white;
@@ -463,38 +427,36 @@ footer {
     margin: 0px 0px 15px 0px;
     cursor: pointer;
     border-radius: 16px;
-  }
-
+}
 .evento1{
     background-image: url("https://innovationorigins.com/wp-content/uploads/2018/06/Vicky-Bergmans-actie-_-foto-Bram-Berkien.png");
- }
- .evento2{
+}
+.evento2{
     background-image: url("http://www.bellariaigeamarina.org/storage-image/EVENTI-2016/BEACH-BASKET/Beach-basket-3.jpg");
 }
 .evento3{
     background-image: url("http://playtowin.com.ar/basket/play-to-win-caballito-basquet-3x3.jpg");
- }
- .evento4{
+}
+.evento4{
     background-image: url("https://www.cremonaoggi.it/wp-content/uploads/2018/06/barcella-ev-770x370.jpg");
- }
- .evento5{
+}
+.evento5{
     background-image: url("https://www.elespectador.com/sites/default/files/06bogota_nota1%2Cph01_1538772033.jpg");
- }
- .evento6{
+}
+.evento6{
     background-image: url("https://s3-eu-west-1.amazonaws.com/bwinnewsprod/es/uploads/2019/02/Super-BowLIII-809x410Category-Carousel-Image-and-Feature-image-on-mobile-809x410-7.jpg");
- }
-
-
-
-
-
-/* HASTA ACA */
-
-
+}
+/* ----/MODULOS EVENTOS--- */
+#luz {
+    background-image: url("https://i.ytimg.com/vi/fxrYMltGbx0/maxresdefault.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    padding: 100px 50px;
+} 
+/*--- /LUZ-- */
 /*MEDIA QUERIES*/
-
 @media screen and (min-width: 780px) and (max-width:1024px) {
-
     .wrap-labor {
         display: flex;
         flex-flow: row nowrap;
@@ -503,7 +465,6 @@ footer {
         padding-top: 30px;
         justify-content: space-evenly;
     }
-
     .col-labor {
         text-align: center;
         order: 1;
@@ -521,11 +482,8 @@ footer {
         width: auto;
         height: auto;
     }
-
 }
-
 @media screen and (min-width: 480px) and (max-width:780px) {
-
     .wrap-labor {
         display: flex;
         flex-flow: row wrap;
@@ -534,13 +492,11 @@ footer {
         padding-top: 30px;
         justify-content: space-evenly;
     }
-
     .col-labor {
         text-align: center;
         order: 1;
         flex-basis: 50%;
     }
-
     #ca-inner {
         display: none;
     }
@@ -548,49 +504,39 @@ footer {
         display: block;
         margin-top: 25px;
     }
-    
-    #logo {
-        display: none;
-    }
-
-    nav {
-        display: none;
-    }
-
     #eventos {
-        padding: 0px;
+        padding: 100px 0px 0px 0px;
+    }
+    #luz {
+        background-attachment: initial;
     }
     .evento{
         width:45%;
         margin:2.5%;
     }
-
     .ca-inner {
         padding-top: 0px;
     }
-
     .ca-inner p {
         font-size: 16px;
         line-height: 1.8em;
     }
-
     iframe {
         width: 100%;
         height: auto;
     }
-
     fieldset {
         font-size: 14px;
         width: 55%;
     }
-
     .container-grid {
         grid-template-columns: 40% 60%;
         grid-gap: 5px;
     }
-
     #hero {
-        background-size: contain;
+        background-size: contain;  
+        background-attachment: initial;
+
     }
     .hero-inner p {
         font-size: 12px;
@@ -601,14 +547,35 @@ footer {
         padding-top: 15%;
         padding-left: 5%;
     }
-
-    
-
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 0;
+    }
+    nav ul {
+        max-height: 0px;
+        background: #000;
+    }
+    nav.black ul {
+        background: #000;
+    }
+    .showing {
+        max-height: 34em;
+    }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+    .menu-icon {
+        display: block;
+    }
+    header {
+        height: 90px;
+    }
 }
-
-
 @media screen and (max-width:480px) {
-
     .wrap-labor {
         display: flex;
         flex-flow: row wrap;
@@ -617,7 +584,6 @@ footer {
         padding-top: 30px;
         justify-content: space-evenly;
     }
-
     .col-labor {
         text-align: center;
         order: 1;
@@ -626,14 +592,6 @@ footer {
     #ca {
         display: none;
     } 
-
-    #logo {
-        display: none;
-    }
-
-    nav {
-        display: none;
-    }
     #hero {
         margin: auto;
         background-repeat: no-repeat;
@@ -667,24 +625,21 @@ footer {
         text-shadow: none;
         margin-bottom: 10px;
     }
-    
     .hero-inner span {
         font-size: 18px;
     }
-
     .hero-inner button {
        display: none;
     }
-
     #labor {
-        padding-top: 0px;
+        padding-top: 100px;
     }
     .call-outs-container {
         display: block;
         margin-top: 25px;
     }
     #eventos {
-        padding: 0px;
+        padding: 100px 0px 0px 0px;
     }
     .evento{
         width:98%;
@@ -698,7 +653,6 @@ footer {
         line-height: 20px;
         width: 70%;
     }
-
     .container-grid {
         display: grid;
         grid-template-columns: 100%;
@@ -708,5 +662,33 @@ footer {
     iframe {
         width: 100% !important;
         height: auto;
+    }
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 0;
+    }
+    nav ul {
+        max-height: 0px;
+        background: #000;
+    }
+    nav.black ul {
+        background: #000;
+        margin-top: -1px;
+    }
+    .showing {
+        max-height: 34em;
+    }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+    .menu-icon {
+        display: block;
+    }
+    header {
+        height: 90px;
     }
 }
